@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ItemSelectionViewController" customModule="shoppingList" customModuleProvider="target">
+            <connections>
+                <outlet property="apples" destination="Mgb-6q-2Yw" id="CmA-bz-Xfb"/>
+                <outlet property="bananas" destination="GgZ-6H-vsx" id="YE2-Hq-EbK"/>
+                <outlet property="carrots" destination="FXB-K8-ZdZ" id="p8A-Wh-fDW"/>
+                <outlet property="garlics" destination="R9W-1N-rBR" id="TdX-NE-6fe"/>
+                <outlet property="grapes" destination="F9j-kM-mbm" id="m6P-2K-AfC"/>
+                <outlet property="lemons" destination="98s-Ev-gcQ" id="naX-jr-b8U"/>
+                <outlet property="lettuces" destination="6UO-pR-9wA" id="g4U-lG-JDQ"/>
+                <outlet property="mushrooms" destination="98Y-Ow-2Ty" id="Dgl-Nu-lQN"/>
+                <outlet property="potatoes" destination="RbA-Y1-LqY" id="xks-pY-sIq"/>
+                <outlet property="tangerines" destination="Qxd-dz-QrM" id="NT7-V3-CJH"/>
+                <outlet property="view" destination="lrU-R2-7H1" id="gYz-VY-Kh4"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="item">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lrU-R2-7H1">
+                    <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fruits and Vegetables" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OFf-eI-3XQ">
+                            <rect key="frame" x="80" y="15" width="232" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="88" translatesAutoresizingMaskIntoConstraints="NO" id="fyR-fP-ipb">
+                            <rect key="frame" x="0.0" y="115" width="393" height="523.66666666666663"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SXV-B3-07x">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="34.333333333333336"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mgb-6q-2Yw">
+                                            <rect key="frame" x="0.0" y="0.0" width="196.66666666666666" height="34.333333333333336"/>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" title="🍎 Apples"/>
+                                            <connections>
+                                                <action selector="itemButtonTapped:" destination="-1" eventType="touchUpInside" id="dBr-A0-PIg"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GgZ-6H-vsx">
+                                            <rect key="frame" x="196.66666666666663" y="0.0" width="196.33333333333337" height="34.333333333333336"/>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" title="🍌 Bananas"/>
+                                            <connections>
+                                                <action selector="itemButtonTapped:" destination="-1" eventType="touchUpInside" id="MkC-kI-stc"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zqS-RM-pww">
+                                    <rect key="frame" x="0.0" y="122.3333333333333" width="393" height="34.333333333333329"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="98s-Ev-gcQ">
+                                            <rect key="frame" x="0.0" y="0.0" width="196.66666666666666" height="34.333333333333336"/>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" title="🍋 Lemons"/>
+                                            <connections>
+                                                <action selector="itemButtonTapped:" destination="-1" eventType="touchUpInside" id="3Mm-GV-kT0"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F9j-kM-mbm">
+                                            <rect key="frame" x="196.66666666666663" y="0.0" width="196.33333333333337" height="34.333333333333336"/>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" title="🍇 Grapes"/>
+                                            <connections>
+                                                <action selector="itemButtonTapped:" destination="-1" eventType="touchUpInside" id="65w-cD-zaM"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sBq-L1-61R">
+                                    <rect key="frame" x="0.0" y="244.66666666666671" width="393" height="34.333333333333343"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qxd-dz-QrM">
+                                            <rect key="frame" x="0.0" y="0.0" width="196.66666666666666" height="34.333333333333336"/>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" title="🍊 Tangerines"/>
+                                            <connections>
+                                                <action selector="itemButtonTapped:" destination="-1" eventType="touchUpInside" id="umA-Tl-SbU"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6UO-pR-9wA">
+                                            <rect key="frame" x="196.66666666666663" y="0.0" width="196.33333333333337" height="34.333333333333336"/>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" title="🥬 Lettuces"/>
+                                            <connections>
+                                                <action selector="itemButtonTapped:" destination="-1" eventType="touchUpInside" id="isL-MD-fqi"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yLb-iE-qIZ">
+                                    <rect key="frame" x="0.0" y="367" width="393" height="34.333333333333314"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="98Y-Ow-2Ty">
+                                            <rect key="frame" x="0.0" y="0.0" width="196.66666666666666" height="34.333333333333336"/>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" title="🍄 Mushrooms"/>
+                                            <connections>
+                                                <action selector="itemButtonTapped:" destination="-1" eventType="touchUpInside" id="Vci-Da-zlJ"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FXB-K8-ZdZ">
+                                            <rect key="frame" x="196.66666666666663" y="0.0" width="196.33333333333337" height="34.333333333333336"/>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" title="🥕 Carrots"/>
+                                            <connections>
+                                                <action selector="itemButtonTapped:" destination="-1" eventType="touchUpInside" id="YJv-aG-W11"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iWW-NG-Ddn">
+                                    <rect key="frame" x="0.0" y="489.33333333333337" width="393" height="34.333333333333371"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R9W-1N-rBR">
+                                            <rect key="frame" x="0.0" y="0.0" width="196.66666666666666" height="34.333333333333336"/>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" title="🧄 Garlics"/>
+                                            <connections>
+                                                <action selector="itemButtonTapped:" destination="-1" eventType="touchUpInside" id="Izf-e8-DPk"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RbA-Y1-LqY">
+                                            <rect key="frame" x="196.66666666666663" y="0.0" width="196.33333333333337" height="34.333333333333336"/>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" title="🥔 Potatoes"/>
+                                            <connections>
+                                                <action selector="itemButtonTapped:" destination="-1" eventType="touchUpInside" id="GHC-Xr-lpf"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                        </stackView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tir-fH-NII">
+                            <rect key="frame" x="125" y="694.66666666666663" width="143" height="34.333333333333371"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="filled" title="Go to Shopping"/>
+                            <connections>
+                                <action selector="goToShoppingList:" destination="-1" eventType="touchUpInside" id="ZYY-fJ-NhM"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemYellowColor"/>
+                    <constraints>
+                        <constraint firstItem="fyR-fP-ipb" firstAttribute="top" secondItem="OFf-eI-3XQ" secondAttribute="bottom" constant="70" id="FZV-wZ-Ytn"/>
+                        <constraint firstItem="Tir-fH-NII" firstAttribute="leading" secondItem="lrU-R2-7H1" secondAttribute="leading" constant="125" id="HMt-J5-sws"/>
+                        <constraint firstAttribute="trailing" secondItem="OFf-eI-3XQ" secondAttribute="trailing" constant="81" id="JzK-6B-eCm"/>
+                        <constraint firstItem="Tir-fH-NII" firstAttribute="top" secondItem="fyR-fP-ipb" secondAttribute="bottom" constant="56" id="NmE-D9-jpo"/>
+                        <constraint firstItem="fyR-fP-ipb" firstAttribute="leading" secondItem="lrU-R2-7H1" secondAttribute="leading" id="R5x-Ur-Ch1"/>
+                        <constraint firstItem="OFf-eI-3XQ" firstAttribute="top" secondItem="lrU-R2-7H1" secondAttribute="top" constant="15" id="brd-yl-HH5"/>
+                        <constraint firstAttribute="bottom" secondItem="Tir-fH-NII" secondAttribute="bottom" constant="30" id="jdt-eg-RQ6"/>
+                        <constraint firstItem="OFf-eI-3XQ" firstAttribute="leading" secondItem="lrU-R2-7H1" secondAttribute="leading" constant="80" id="tLJ-sB-BmX"/>
+                        <constraint firstAttribute="trailing" secondItem="Tir-fH-NII" secondAttribute="trailing" constant="125" id="tgB-5b-c8M"/>
+                        <constraint firstAttribute="trailing" secondItem="fyR-fP-ipb" secondAttribute="trailing" id="wC5-bu-gjZ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemYellowColor"/>
+            <constraints>
+                <constraint firstItem="lrU-R2-7H1" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="AYb-4n-lxg"/>
+                <constraint firstItem="lrU-R2-7H1" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="bdf-MY-nOx"/>
+                <constraint firstItem="lrU-R2-7H1" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="ddn-IC-WQf"/>
+                <constraint firstItem="lrU-R2-7H1" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="xhI-NN-mrJ"/>
+            </constraints>
+            <point key="canvasLocation" x="52.671755725190835" y="19.718309859154932"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
