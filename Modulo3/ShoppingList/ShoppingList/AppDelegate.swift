@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  ShoppingList
 //
-//  Created by Marco Antonio Alvarado Díaz on 18/05/24.
+//  Created by Diplomado on 25/05/24.
 //
 
 import UIKit
